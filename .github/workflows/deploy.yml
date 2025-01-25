@@ -1,6 +1,6 @@
 name: Deployment
 env:
-  MONGODB_CLUSTER_ADDRESS: cluster0.shard-00-00.3d1r2.mongodb.net
+  MONGODB_CLUSTER_ADDRESS: cluster0.czwra.mongodb.net
   MONGODB_DB_NAME: cluster0
   MONGODB_PASSWORD: yA25HabqgHKsgyKj
   MONGODB_USER: williamng
