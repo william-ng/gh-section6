@@ -2,8 +2,6 @@ name: Deployment
 env:
   MONGODB_CLUSTER_ADDRESS: cluster0.czwra.mongodb.net
   MONGODB_DB_NAME: cluster0
-  MONGODB_PASSWORD: yA25HabqgHKsgyKj
-  MONGODB_USERNAME: williamng
   PORT: 3000
 on:
   push:
@@ -14,6 +12,9 @@ jobs:
   test:
     environment: testing
     runs-on: ubuntu-latest
+    env:
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
     steps:
       - name: Get Code
         uses: actions/checkout@v3
