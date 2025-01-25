@@ -3,7 +3,7 @@ env:
   MONGODB_CLUSTER_ADDRESS: cluster0.czwra.mongodb.net
   MONGODB_DB_NAME: cluster0
   MONGODB_PASSWORD: yA25HabqgHKsgyKj
-  MONGODB_USER: williamng
+  MONGODB_USERNAME: williamng
   PORT: 3000
 on:
   push:

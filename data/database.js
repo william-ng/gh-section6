@@ -5,6 +5,12 @@ const dbUser = process.env.MONGODB_USERNAME;
 const dbPassword = process.env.MONGODB_PASSWORD;
 const dbName = process.env.MONGODB_DB_NAME;
 
+console.log('Environment variables loaded:');
+console.log('Cluster Address:', clusterAddress);
+console.log('DB Name:', dbName);
+console.log('Username:', dbUser);
+console.log('Password:', dbPassword ? '****' : 'not set');
+
 const uri = `mongodb+srv://${dbUser}:${dbPassword}@${clusterAddress}/?retryWrites=true&w=majority`;
 const client = new MongoClient(uri);
 
